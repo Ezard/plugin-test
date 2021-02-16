@@ -1,0 +1,20 @@
+{
+  parserClass="plugin.test.TestParser"
+
+  extends="com.intellij.extapi.psi.ASTWrapperPsiElement"
+
+  psiClassPrefix="Test"
+  psiImplClassSuffix="Impl"
+  psiPackage="com.intellij.psi"
+  psiImplPackage="com.intellij.psi.impl"
+
+  elementTypeHolderClass="plugin.test.TestTypes"
+  elementTypeClass="plugin.test.TestElementType"
+  tokenTypeClass="plugin.test.TestTokenType"
+
+  tokens = [
+    FOO
+  ]
+}
+
+file ::= '"' FOO '"'

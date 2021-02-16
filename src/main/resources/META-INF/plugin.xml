@@ -1,0 +1,23 @@
+<idea-plugin>
+  <id>org.example.plugin-test</id>
+  <name>Test</name>
+  <vendor email="test@yourcompany.com" url="https://www.yourcompany.com">Company</vendor>
+
+  <description><![CDATA[
+    This is a long placeholder name for this plugin
+    ]]></description>
+
+  <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <fileType name="Test" implementationClass="plugin.test.TestFileType" fieldName="INSTANCE"
+              language="Test" extensions="test"/>
+    <completion.contributor language="Test" implementationClass="plugin.test.TestCompletionContributor"/>
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+  </actions>
+</idea-plugin>
